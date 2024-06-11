@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="header-left">
+            <div class="header-logo">
+                <img src="img/interface-control-svgrepo-com.svg" alt="">
+            </div>
+            <div class="header-lang">
+                <select name="lang" id="lang" class="header-select">
+                    <option value="ru">ru</option>
+                    <option value="en">en</option>
+                    <option value="az">az</option>
+                </select>
+            </div>
+        </div>
+        <div class="header-input">
+            <input type="search" id="input-search" placeholder="Поиск" class="input-header" data-key="searchPlaceholder">
+        </div>
+        <div class="header-right">
+            <span class="basket-value">0</span>
+            <div class="header-right-svg">
+                <img src="img/basket.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--Main-Wrapper-->
+    <div class="main-wrapper">
+        <!--Left-Navbar-->
+        <div class="main-wrapper-left">
+            <div class="filter" data-key="filter">
+                Фильтрация
+            </div>
+            <select id="category" class="category-list" data-key="category">
+                <option value="Allproduct" data-key="allProducts">Все товары</option>
+                <option value="Notebook" data-key="notebooks">Ноутбуки</option>
+                <option value="Smartphone" data-key="smartphones">Смартфоны</option>
+            </select>
+            <div class="Notebooks-section">
+              <div class="Notebook-apple">
+                <input type="checkbox" id="Apple" class="Apple"/>
+                <label for="Apple" data-key="apple">Apple</label> 
+              </div>
+              <div class="Notebook-Hp">
+                <input type="checkbox" id="Hp" class="Hp"/>
+                <label for="Hp" data-key="hp">Hp</label> 
+              </div>
+              <div class="Notebook-Lenovo">
+                <input type="checkbox" id="Lenovo" class="Lenovo"/>
+                <label for="Lenovo" data-key="lenovo">Lenovo</label> 
+              </div>
+            </div>
+            <div class="Smartphone-section">
+                <div class="Smartphone-apple">
+                  <input type="checkbox" id="Apple-tel" class="Apple-tel"/>
+                  <label for="Apple-tel" data-key="appleTel">Apple</label> 
+                </div>
+                <div class="Smartphone-Android">
+                  <input type="checkbox" id="Android-tel" class="Android-tel"/>
+                  <label for="Android-tel" data-key="androidTel">Android</label> 
+                </div>
+                <div class="Smartphone-Huawei">
+                  <input type="checkbox" id="Huawei" class="Huawei"/>
+                  <label for="Huawei" data-key="huawei">Oppo</label> 
+                </div>
+                <div class="Smartphone-Vivo">
+                  <input type="checkbox" id="Vivo" class="Vivo"/>
+                  <label for="Vivo" data-key="vivo">Vivo</label> 
+                </div>
+              </div>
+        </div>
+        <!--main-wrapper-right-->
+        <div class="main-wrapper-right">
+            <div id="loader" class="loader"></div>
+            <div class="mainWrapper-flex">
+
+            </div>
+            <div class="basketContainer">
+                
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
